@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Button } from 'react-native';
 
 
 
@@ -32,7 +32,11 @@ export default class LockScreen extends React.Component {
          <Text style={styles.forgot}>Forgot Password?</Text>
        </TouchableOpacity>
        <TouchableOpacity style={styles.loginBtn}>
-         <Text style={styles.loginText}>LOGIN</Text>
+         <Button
+           title="LOGIN"
+           style={styles.loginBtn}
+           onPress={() => this.props.navigation.navigate('Home')}
+         />
        </TouchableOpacity>
        <TouchableOpacity>
          <Text style={styles.loginText}>Signup</Text>
