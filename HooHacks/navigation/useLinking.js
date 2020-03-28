@@ -8,6 +8,7 @@ export default function(containerRef) {
       Root: {
         path: 'root',
         screens: {
+          Map: 'socialDistance',
           Home: 'home',
           Links: 'links',
           Settings: 'settings',
